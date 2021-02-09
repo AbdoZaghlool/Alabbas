@@ -253,25 +253,12 @@
                                                     </div>
 
 
-                                                    <div class="row-img" style="background: #000000b0; padding-top:30px; padding-bottom: 5px;">
-                                                        <div class="container">
-                                                            <ul style=" color:#fff; font-size:18px; text-align: center;">
-                                                                <li style="line-height: 30px;">
-                                                                    <p class="themesflat-button bg-light-white big">قيمه الجلسة الاستشاريه: {{$things['setting']->payment_value}}ريال</p>
-                                                                </li>
-
-                                                            </ul>
-                                                        </div>
-
-                                                    </div>
 
                                                     <div class="col-md-4"> </div>
                                                     <div class="wpcf7-response-output" role="alert" aria-hidden="true"></div>
                                                 </div>
-                                                <input type="submit" value="الدفع">
-                                            </form>
-
-
+                                                
+                                        
                                         </div><!-- /.row -->
                                         <div class="themesflat-spacer clearfix" data-desktop="58" data-mobile="35" data-smobile="35"></div>
                                     </div><!-- /.container -->
@@ -280,14 +267,24 @@
 
 
 
+                                                    <div class="row-img" style="background: #000000b0; padding-top:30px; padding-bottom: 5px;">
+                                                        <div class="container">
+                                                            <ul style=" color:#fff; font-size:18px; text-align: center;">
+                                                                <li style="line-height: 30px;">
+                                                                    <p class="themesflat-button bg-light-white big">قيمه الجلسة الاستشاريه: {{$things['setting']->payment_value}}ريال</p>
+                                                                </li>
+<li>
+    <input type="submit" class="themesflat-button bg-light-white big" value="الدفع">
+</li>
+                                                            </ul>
+                                                        </div>
 
+                                                    </div>
+                                                    
+                       </form>
 
-
-
-
-
-
-
+                                 
+                                                    
                             </div><!-- /.page-content -->
                         </div><!-- /#inner-content -->
                     </div><!-- /#site-content -->
@@ -332,5 +329,6 @@
     <script src="{{asset('includes/rev-slider/js/extensions/revolution.extension.slideanims.min.js')}}"></script>
     <script src="{{asset('includes/rev-slider/js/extensions/revolution.extension.video.min.js')}}"></script>
     <script src="{{asset('assets/js/lightbox.min.js')}}"></script>
+    
 </body>
 </html>

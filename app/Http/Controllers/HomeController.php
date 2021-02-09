@@ -52,7 +52,7 @@ class HomeController extends Controller
             'payment_method' => 'required',
         ];
         $this->validate($request, $rules);
-        // dd($request->payment_method);
+
         $cash = Setting::pluck('payment_value')->first() ?? 200;
         $order = Order::create([
             'name'           => $request->name,
@@ -66,8 +66,8 @@ class HomeController extends Controller
 
         $data = "{\"PaymentMethodId\":\"$request->payment_method\",\"CustomerName\": \"$request->name\",\"DisplayCurrencyIso\": \"SAR\",
         \"MobileCountryCode\":\"+966\",\"CustomerMobile\": \"$request->phone_number\",
-        \"CustomerEmail\": \"email@mail.com\",\"InvoiceValue\": $cash,\"CallBackUrl\": \"http://127.0.0.1:8000/check-status\",
-        \"ErrorUrl\": \"http://127.0.0.1:8000/check-status\",\"Language\": \"ar\",\"CustomerReference\" :\"ref 1\",
+        \"CustomerEmail\": \"email@mail.com\",\"InvoiceValue\": $cash,\"CallBackUrl\": \"http://azizalabas.com/check-status\",
+        \"ErrorUrl\": \"http://azizalabas.com/check-status\",\"Language\": \"ar\",\"CustomerReference\" :\"ref 1\",
         \"CustomerCivilId\":12345678,\"UserDefinedField\": \"Custom field\",\"ExpireDate\": \"\",
         \"CustomerAddress\" :{\"Block\":\"\",\"Street\":\"\",\"HouseBuildingNo\":\"\",\"Address\":\"\",\"AddressInstructions\":\"\"},
         \"InvoiceItems\": [{\"ItemName\": \"$request->name\",\"Quantity\": 1,\"UnitPrice\": $cash}]}";

@@ -1621,7 +1621,7 @@ line-height: 37px;
             }
            .formmain .col-md-9 input{ border-radius: 15px;
     border: 1px solid #ffffff59;
-    background: #ffffff6b;
+    background: #ffffffa6;
     margin-bottom: 30px;
     color: #000;
 }
@@ -1633,4 +1633,13 @@ line-height: 37px;
     
         padding: 15px 50px;
     border-radius: 30px;
+}
+
+
+select{
+    border-radius: 15px;
+    border: 1px solid #ffffff59;
+    background: #ffffffa6;
+    margin-bottom: 30px !important;
+    color: #000;
 }

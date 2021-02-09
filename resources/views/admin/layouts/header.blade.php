@@ -22,25 +22,25 @@
                 <!-- DOC: Apply "dropdown-dark" class after "dropdown-extended" to change the dropdown styte -->
                 <!-- DOC: Apply "dropdown-hoverable" class after below "dropdown" and remove data-toggle="dropdown" data-hover="dropdown" data-close-others="true" attributes to enable hover dropdown mode -->
                 <!-- DOC: Remove "dropdown-hoverable" and add data-toggle="dropdown" data-hover="dropdown" data-close-others="true" attributes to the below A element with dropdown-toggle class -->
-                <li class="dropdown dropdown-extended dropdown-notification" id="header_notification_bar" onclick="delete_number();">
-                    <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
-                        <i class="icon-bell"></i>
-                        <span class="badge badge-default" id="mySpan_notification1"></span>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li class="external">
-                            <h3>
-                                <span class="bold" id="mySpan_notification"></span> إشعارات جديدة
-                            </h3>
-                            <a href="{{url('admin/notification')}}">مشاهدة الكل</a>
-                        </li>
-                        <li>
-                            <ul id="number_notification" class="dropdown-menu-list scroller" style="height: 250px;" data-handle-color="#637283">
+                <!--<li class="dropdown dropdown-extended dropdown-notification" id="header_notification_bar" onclick="delete_number();">-->
+                <!--    <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">-->
+                <!--        <i class="icon-bell"></i>-->
+                <!--        <span class="badge badge-default" id="mySpan_notification1"></span>-->
+                <!--    </a>-->
+                <!--    <ul class="dropdown-menu">-->
+                <!--        <li class="external">-->
+                <!--            <h3>-->
+                <!--                <span class="bold" id="mySpan_notification"></span> إشعارات جديدة-->
+                <!--            </h3>-->
+                <!--            <a href="{{url('admin/notification')}}">مشاهدة الكل</a>-->
+                <!--        </li>-->
+                <!--        <li>-->
+                <!--            <ul id="number_notification" class="dropdown-menu-list scroller" style="height: 250px;" data-handle-color="#637283">-->
 
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
+                <!--            </ul>-->
+                <!--        </li>-->
+                <!--    </ul>-->
+                <!--</li>-->
                 <!-- END NOTIFICATION DROPDOWN -->
                 <!-- BEGIN INBOX DROPDOWN -->
                 <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
